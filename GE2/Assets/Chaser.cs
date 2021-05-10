@@ -57,7 +57,7 @@ public class Chaser : MonoBehaviour
         }
         if(chaseTime <= 0 && chaseTime > -10)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
         SlowRotate();
