@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Missile
   - Broke
+  - Asteroid
   layers:
   - Default
   - TransparentFX

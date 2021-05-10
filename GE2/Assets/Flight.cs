@@ -18,6 +18,10 @@ public class Flight : MonoBehaviour
 
     public GameObject bullet;
 
+    bool lastScene;
+
+    public GameObject death;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +71,12 @@ public class Flight : MonoBehaviour
         {
             returnFire = true;
             StartCoroutine(Fire());
+        }
+
+        if(other.tag == "Asteroid")
+        {
+            Instantiate(death, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }
